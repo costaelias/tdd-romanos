@@ -9,5 +9,13 @@ public class PruebaEscribaRomano {
 		
 		new EscribaRomano();
 	}
+
+	@Test
+	public void copia1ComoI() {
+		
+		EscribaRomano escriba = new EscribaRomano();
+		
+		String numeroRomano = escriba.copiar(1);
+	}
 	
 }
