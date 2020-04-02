@@ -16,17 +16,13 @@ public class PruebaEscribaRomano {
 	@Test
 	public void copia1ComoI() {
 		
-		String numeroRomano = escriba.copiar(1);
-		
-		Assert.assertEquals("I", numeroRomano);
+		Assert.assertEquals("I", escriba.copiar(1));
 	}
 	
 	@Test
 	public void copia2ComoII() {
 		
-		String numeroRomano = escriba.copiar(2);
-		
-		Assert.assertEquals("II", numeroRomano);
+		Assert.assertEquals("II", escriba.copiar(2));
 	}
 
 }
