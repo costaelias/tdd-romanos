@@ -4,6 +4,6 @@ public class EscribaRomano {
 
 	public String copiar(int numero) {
 
-		return null;
+		return "I";
 	}
 }
