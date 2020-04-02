@@ -6,7 +6,11 @@ public class EscribaRomano {
 
 		String romano = "";
 		
-		if (numero == 4) {
+		if (numero == 5) {
+			
+			romano = "V";
+			
+		} else if (numero == 4) {
 			
 			romano = "IV";
 		
