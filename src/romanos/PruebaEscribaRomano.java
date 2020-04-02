@@ -1,5 +1,6 @@
 package romanos;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 public class PruebaEscribaRomano {
@@ -16,6 +17,8 @@ public class PruebaEscribaRomano {
 		EscribaRomano escriba = new EscribaRomano();
 		
 		String numeroRomano = escriba.copiar(1);
+		
+		Assert.assertEquals("I", numeroRomano);
 	}
 	
 }
