@@ -4,19 +4,11 @@ public class EscribaRomano {
 
 	public String copiar(int numero) {
 
-		String romano;
+		String romano = "";
 		
-		if (numero == 3) {
+		for (int i = numero; i > 0; i--) {
 			
-			romano = "III";
-		
-		} else if (numero == 2) {
-			
-			romano = "II";
-			
-		} else {
-			
-			romano = "I";
+			romano = romano + "I";
 		}
 		
 		return romano;
