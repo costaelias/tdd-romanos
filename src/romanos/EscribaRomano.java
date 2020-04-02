@@ -6,11 +6,18 @@ public class EscribaRomano {
 
 		String romano = "";
 		
-		for (int i = numero; i > 0; i--) {
+		if (numero == 4) {
 			
-			romano = romano + "I";
-		}
+			romano = "IV";
 		
+		} else {
+			
+			for (int i = numero; i > 0; i--) {
+				
+				romano = romano + "I";
+			}
+		}
+
 		return romano;
 	}
 }
