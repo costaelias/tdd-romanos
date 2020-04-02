@@ -25,4 +25,9 @@ public class PruebaEscribaRomano {
 		Assert.assertEquals("II", escriba.copiar(2));
 	}
 
+	@Test
+	public void copia3ComoIII() {
+		
+		Assert.assertEquals("III", escriba.copiar(3));
+	}
 }
