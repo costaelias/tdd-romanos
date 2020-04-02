@@ -6,13 +6,13 @@ public class EscribaRomano {
 
 		String romano;
 		
-		if (numero == 1) {
+		if (numero == 2) {
 			
-			romano = "I";
+			romano = "II";
 		
 		} else {
 			
-			romano = "II";
+			romano = "I";
 		}
 		
 		return romano;
