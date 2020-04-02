@@ -4,6 +4,17 @@ public class EscribaRomano {
 
 	public String copiar(int numero) {
 
-		return "I";
+		String romano;
+		
+		if (numero == 1) {
+			
+			romano = "I";
+		
+		} else {
+			
+			romano = "II";
+		}
+		
+		return romano;
 	}
 }
