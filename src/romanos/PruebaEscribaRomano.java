@@ -56,18 +56,6 @@ public class PruebaEscribaRomano {
 	}
 	
 	@Test
-	public void copia30ComoXXX() {
-		
-		Assert.assertEquals("XXX", escriba.copiar(30));
-	}
-	
-	@Test
-	public void copia25ComoXXV() {
-		
-		Assert.assertEquals("XXV", escriba.copiar(25));
-	}
-	
-	@Test
 	public void copia13ComoXIII() {
 		
 		Assert.assertEquals("XIII", escriba.copiar(13));
@@ -78,6 +66,19 @@ public class PruebaEscribaRomano {
 		
 		Assert.assertEquals("XIV", escriba.copiar(14));
 	}
+	
+	@Test
+	public void copia25ComoXXV() {
+		
+		Assert.assertEquals("XXV", escriba.copiar(25));
+	}
+
+	@Test
+	public void copia30ComoXXX() {
+		
+		Assert.assertEquals("XXX", escriba.copiar(30));
+	}
+	
 }
 
 
