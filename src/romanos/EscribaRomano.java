@@ -6,19 +6,17 @@ public class EscribaRomano {
 
 		String romano = "";
 		
-		if (numero == 8) {
-			
-			romano = "VIII";
-			
-		} else if (numero == 6) {
-			
-			romano = "VI";
-			
-		} else if (numero == 5) {
+		if (numero >= 5) {
 			
 			romano = "V";
 			
-		} else if (numero == 4) {
+			for (int i = numero - 5; i > 0; i--) {
+				
+				romano = romano + "I";
+			}
+		}
+		
+		if (numero == 4) {
 			
 			romano = "IV";
 		
