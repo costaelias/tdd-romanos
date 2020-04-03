@@ -22,7 +22,7 @@ public class EscribaRomano {
 		
 		if (numero == 4) {
 			
-			romano = "IV";
+			romano = romano + "IV";
 		
 		} else if (numero >= 1) {
 
