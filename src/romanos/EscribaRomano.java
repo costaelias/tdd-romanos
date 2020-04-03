@@ -14,9 +14,8 @@ public class EscribaRomano {
 				
 				romano = romano + "I";
 			}
-		}
-		
-		if (numero == 4) {
+			
+		} else if (numero == 4) {
 			
 			romano = "IV";
 		
