@@ -85,6 +85,11 @@ public class PruebaEscribaRomano {
 		Assert.assertEquals("XXX", escriba.copiar(30));
 	}
 	
+	@Test
+	public void copia53ComoLIII() {
+		
+		Assert.assertEquals("LIII", escriba.copiar(53));
+	}
 }
 
 
