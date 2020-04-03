@@ -20,13 +20,18 @@ public class EscribaRomano {
 			numero = numero % 5;
 		}
 		
-		if (numero == 4) {
+		if (numero >= 4) {
 			
-			romano = romano + "IV";
-		
-		} else if (numero >= 1) {
+			romano = romano + concatenar("IV", numero / 4);
 
-			romano = romano + concatenar("I", numero);
+			numero = numero % 4; 
+		} 
+		
+		if (numero >= 1) {
+
+			romano = romano + concatenar("I", numero / 1);
+			
+			numero = numero % 1;
 		}
 
 		return romano;
