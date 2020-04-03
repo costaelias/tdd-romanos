@@ -8,16 +8,19 @@ public class EscribaRomano {
 		
 		if (numero >= 10) {
 		
-			romano = concatenar("X", numero / 10);
+			romano = romano + concatenar("X", numero / 10);
 
 			numero = numero % 10;
 		} 
 		
 		if (numero >= 5) {
 			
-			romano = romano + "V" + concatenar("I", numero - 5);
+			romano = romano + concatenar("V", numero / 5);
 			
-		} else if (numero == 4) {
+			numero = numero % 5;
+		}
+		
+		if (numero == 4) {
 			
 			romano = "IV";
 		
