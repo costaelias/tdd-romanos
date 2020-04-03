@@ -98,6 +98,12 @@ public class PruebaEscribaRomano {
 	}
 
 	@Test
+	public void copia402ComoCDII() {
+		
+		Assert.assertEquals("CDII", escriba.copiar(402));
+	}
+
+	@Test
 	public void copia2537ComoMMDXXXVII() {
 		
 		Assert.assertEquals("MMDXXXVII", escriba.copiar(2537));
