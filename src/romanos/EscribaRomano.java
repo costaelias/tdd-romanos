@@ -10,7 +10,7 @@ public class EscribaRomano {
 		
 			romano = concatenar("X", numero / 10);
 
-			numero = numero - ((numero/10)*10);
+			numero = numero % 10;
 		} 
 		
 		if (numero >= 5) {
