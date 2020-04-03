@@ -12,7 +12,7 @@ public class EscribaRomano {
 			
 		} else if (numero >= 5) {
 			
-			romano = "V" + concatenarI(numero - 5);
+			romano = "V" + concatenar("I", numero - 5);
 			
 		} else if (numero == 4) {
 			
@@ -20,7 +20,7 @@ public class EscribaRomano {
 		
 		} else {
 
-			romano = concatenarI(numero);
+			romano = concatenar("I", numero);
 		}
 
 		return romano;
@@ -33,18 +33,6 @@ public class EscribaRomano {
 		for (int i = 0; i < cantidad; i++) {
 			
 			cadena = cadena + simbolo;
-		}
-		
-		return cadena;
-	}
-	
-	private String concatenarI(int cantidad) {
-		
-		String cadena = "";
-		
-		for (int i = 0; i < cantidad; i++) {
-			
-			cadena = cadena + "I";
 		}
 		
 		return cadena;
