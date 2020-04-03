@@ -6,21 +6,24 @@ public class EscribaRomano {
 
 		String romano = "";
 		
-		if (numero >= 30) {
+		if (numero >= 10) {
 		
 			romano = concatenar("X", numero / 10);
+
+			numero = numero - ((numero/10)*10);
+		} 
+		
+		if (numero >= 5) {
 			
-		} else if (numero >= 5) {
-			
-			romano = "V" + concatenar("I", numero - 5);
+			romano = romano + "V" + concatenar("I", numero - 5);
 			
 		} else if (numero == 4) {
 			
 			romano = "IV";
 		
-		} else {
+		} else if (numero >= 1) {
 
-			romano = concatenar("I", numero);
+			romano = romano + concatenar("I", numero);
 		}
 
 		return romano;
