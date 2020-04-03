@@ -7,11 +7,8 @@ public class EscribaRomano {
 		String romano = "";
 		
 		if (numero >= 30) {
-			
-			for (int i = 0; i < (numero / 10); i++) {
-				
-				romano = romano + "X";
-			}
+		
+			romano = concatenar("X", numero / 10);
 			
 		} else if (numero >= 5) {
 			
@@ -27,6 +24,18 @@ public class EscribaRomano {
 		}
 
 		return romano;
+	}
+	
+	private String concatenar(String simbolo, int cantidad) {
+		
+		String cadena = "";
+		
+		for (int i = 0; i < cantidad; i++) {
+			
+			cadena = cadena + simbolo;
+		}
+		
+		return cadena;
 	}
 	
 	private String concatenarI(int cantidad) {
