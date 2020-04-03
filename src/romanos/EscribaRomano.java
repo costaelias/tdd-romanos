@@ -8,25 +8,29 @@ public class EscribaRomano {
 		
 		if (numero >= 5) {
 			
-			romano = "V";
-			
-			for (int i = numero - 5; i > 0; i--) {
-				
-				romano = romano + "I";
-			}
+			romano = "V" + concatenarI(numero - 5);
 			
 		} else if (numero == 4) {
 			
 			romano = "IV";
 		
 		} else {
-			
-			for (int i = numero; i > 0; i--) {
-				
-				romano = romano + "I";
-			}
+
+			romano = concatenarI(numero);
 		}
 
 		return romano;
+	}
+	
+	private String concatenarI(int cantidad) {
+		
+		String cadena = "";
+		
+		for (int i = 0; i < cantidad; i++) {
+			
+			cadena = cadena + "I";
+		}
+		
+		return cadena;
 	}
 }
