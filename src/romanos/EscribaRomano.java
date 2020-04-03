@@ -6,7 +6,14 @@ public class EscribaRomano {
 
 		String romano = "";
 		
-		if (numero >= 5) {
+		if (numero >= 30) {
+			
+			for (int i = 0; i < (numero / 10); i++) {
+				
+				romano = romano + "X";
+			}
+			
+		} else if (numero >= 5) {
 			
 			romano = "V" + concatenarI(numero - 5);
 			
