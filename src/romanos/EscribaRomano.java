@@ -2,8 +2,8 @@ package romanos;
 
 public class EscribaRomano {
 
-	private String[] simbolos = {"X", "V", "IV", "I"};
-	private int[] valores = {10, 5, 4, 1};
+	private String[] simbolos = {"X", "IX", "V", "IV", "I"};
+	private int[] valores = {10, 9, 5, 4, 1};
 	
 	public String copiar(int numero) {
 
