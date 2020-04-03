@@ -48,6 +48,12 @@ public class PruebaEscribaRomano {
 		
 		Assert.assertEquals("VI", escriba.copiar(6));
 	}
+	
+	@Test
+	public void copia8ComoVIII() {
+		
+		Assert.assertEquals("VIII", escriba.copiar(8));
+	}
 }
 
 
