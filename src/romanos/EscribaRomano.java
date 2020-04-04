@@ -11,8 +11,8 @@ public class EscribaRomano {
 		
 		for (int i = 0; i < simbolos.length; i++) {
 			
-			romano = romano + concatenar(simbolos[i], numero / valores[i]);
-			numero = numero % valores[i];
+			romano += concatenar(simbolos[i], numero / valores[i]);
+			numero %= valores[i];
 		}
 		
 		return romano;
@@ -24,7 +24,7 @@ public class EscribaRomano {
 		
 		for (int i = 0; i < cantidad; i++) {
 			
-			cadena = cadena + simbolo;
+			cadena += simbolo;
 		}
 		
 		return cadena;
