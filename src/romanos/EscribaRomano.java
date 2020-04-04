@@ -7,6 +7,10 @@ public class EscribaRomano {
 	
 	public String copiar(int numero) {
 
+		if (numero < 1) {
+			throw new Error("No se puede copiar un número menor a 1: " + numero);
+		}
+		
 		String romano = "";
 		
 		for (int i = 0; i < simbolos.length; i++) {
