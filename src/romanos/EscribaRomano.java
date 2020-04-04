@@ -7,9 +7,7 @@ public class EscribaRomano {
 	
 	public String copiar(int numero) {
 
-		if (numero < 1) {
-			throw new Error("No se puede copiar un número menor a 1: " + numero);
-		}
+		validarQueSeaCopiable(numero);
 		
 		String romano = "";
 		
@@ -21,7 +19,7 @@ public class EscribaRomano {
 		
 		return romano;
 	}
-	
+
 	private String concatenar(String simbolo, int cantidad) {
 		
 		String cadena = "";
@@ -32,5 +30,13 @@ public class EscribaRomano {
 		}
 		
 		return cadena;
+	}
+
+	private void validarQueSeaCopiable(int numero) throws Error {
+		
+		if (numero < 1) {
+		
+			throw new Error("No se puede copiar un número menor a 1: " + numero);
+		}
 	}
 }
