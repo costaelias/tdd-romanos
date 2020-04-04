@@ -115,6 +115,11 @@ public class PruebaEscribaRomano {
 		Assert.assertEquals("MMMCMXCIX", escriba.copiar(3999));
 	}
 	
+	@Test(expected = Error.class)
+	public void noPuedeCopiar0() {
+	
+		escriba.copiar(0);
+	}
 }
 
 
